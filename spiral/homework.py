@@ -6,4 +6,5 @@ def spiralize(number):
     return_value = x
     return return_value
 
+
 print(spiralize(501))
