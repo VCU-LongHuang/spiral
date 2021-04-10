@@ -1,9 +1,10 @@
 def spiralize(number):
     return_value = 1
-    n = (number - 1) // 2
-    x = (2 * n * ((8 * n * n) + (15 * n) + 16)) / 3
+    diagonal = (number - 1) // 2
+    return_value = (1 / 3) * (
+        diagonal * (8 * diagonal ^ 2 + 13 + diagonal * 15) * 2 + 3
+    )
 
-    return_value = x
     return return_value
 
 
